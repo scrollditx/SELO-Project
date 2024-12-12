@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-ExtraBold.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-Bold.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-Black.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-Medium.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-ExtraLight.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-Light.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-Regular.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-SemiBold.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../FONTS/transfonter.org-20241212-104825/Lexend-Thin.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/Lexend-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Bold.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-ExtraBold.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Black.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Medium.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-ExtraLight.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Light.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Thin.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-SemiBold.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Regular.woff2') format('woff2'),
+        url('../FONTS/transfonter.org-20241212-104825/LexendDeca-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
