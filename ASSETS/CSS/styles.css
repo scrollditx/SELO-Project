@@ -1,9 +1,12 @@
+/* UNIVERSAL SELECTOR */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ROOT VARS */
 :root{
     --primary-color: linear-gradient(90deg,#58E6FF 0%,#FC81FE 100%);
     --secondary-color:linear-gradient(180deg, #282A36 0%, #2A2B3100 100%);
@@ -28,18 +31,19 @@
     --Lexend:Deca:'lexend Deca';
 }
 
+/* BODY */
 body{
     font-size: var(--fs-16);
     color: var(--White-color);
     background-color: #000;
     line-height: 1.5;
 }
-
+/*! .CONTAINER HERE */
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
-
+/* .ROW HERE */
 .row{
     display: flex;
     flex-wrap: wrap;
