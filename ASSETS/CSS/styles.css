@@ -12,6 +12,8 @@
     --secondary-color:linear-gradient(180deg, #282A36 0%, #2A2B3100 100%);
     --dark-color:#A9A4ABC7;
     --White-color:#fff;
+    --text--color:#6664E4;
+    --text-black:#000;
     --fs-15:15px;
     --fs-16:16px;
     --fs-64:64px;
@@ -29,7 +31,7 @@
     --fw-800:800;
     --fw-900:900;
     --Lexend:'lexend';
-    --Lexend-Deca:'lexend Deca';
+    --Lexend-Deca:'lexend deca';
 }
 
 /* BODY */
@@ -38,7 +40,7 @@ body{
     color: var(--White-color);
     background-color: #000;
     line-height: 1.5;
-    font-family: var(--Lexend);
+    font-family: var(--Lexend-Deca);
 }
 /*! .CONTAINER HERE */
 .container{
@@ -68,6 +70,7 @@ ul,ol{
 
 a{
     text-decoration: none;
+    color: var(--White-color);
 }
 
 img{
@@ -133,6 +136,9 @@ img{
 /* HEADER START */
 header{
     padding: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
 }
 
 header .logo a h2{
@@ -145,12 +151,13 @@ header .menu ul li a{
     font-size: var(--fs-16);
     padding: 16px 20px;
     display: inline-block;
+    border-radius: 8px;
     font-weight: var(--fw-500);
+    transition: 0.5s;
 }
 header .menu ul li:last-child a{
     padding: 8px 22px;
     border: 1px solid #ffffff80;
-    border-radius: 8px;
     background-color: #212529;
     font-size: var(--fs-15);
     transition: 0.5s;
@@ -158,11 +165,109 @@ header .menu ul li:last-child a{
 header .menu ul li a:hover{
     background-color: rgba(9, 31, 67, 0.04);
     color: #6664E4;
-    transition: 0.5s;
 }
 
 header .menu ul li:last-child a:hover{
     background: var(--White-color);
-    color: #000;
+    color: #212529;
 }
-/* HEADER END */
+
+header .drop-down{
+    position: absolute;
+    background-color: var(--White-color);
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.15);
+    border-top: 2px solid var(--primary-color);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    top: 100px;
+    border-radius: 0 0 8px 8px;
+}
+
+header .drop-down ol li a{
+    display: block;
+    padding: 12px 12px 12px 22px;
+    color: #212529a7;
+}
+
+header .drop-down ol li:last-child a{
+    background-color: transparent;
+    color: var(--text--color);
+}
+
+header .menu ul li .drop-down ol li:last-child:hover a{
+    background-color: rgba(137, 43, 226, 0.078);
+    color: var(--text--color);
+}
+
+header .drop-down ol li:hover a{
+    background-color: rgba(137, 43, 226, 0.078);
+    color: var(--text-black);
+}
+
+header .menu ul li:hover .drop-down{
+    opacity: 1;
+    visibility: visible;
+    top: 56px;
+}
+/* HEADER END*/
+
+/* BANNER START */
+.banner{
+    background-image: url('/ASSETS/IMG/selo-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    position: relative;
+}
+ .bg-overlay{
+    background: url('/ASSETS/IMG/bg-overlay.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    
+}
+.banner .banner-content{
+    padding: 80px;
+    position: relative;
+}
+.banner .banner-content h1{
+    font-size: var(--fs-64);
+    font-family: var(--lexend-deca);
+    line-height: 1.2;
+    font-weight: var(--fw-600);
+}
+.banner .banner-content h1 .clip{
+    background-image: var(--primary-color);
+    background-clip: text;
+}
+.banner .banner-content h1 .clip span{
+    color: transparent;
+}
+.banner .banner-content p{
+    padding: 20px 0;
+    color: var(--dark-color);
+    font-size: var(--fs-18);
+}
+.banner .banner-content p span{
+    color: var(--White-color);
+}
+.banner .banner-content a{
+    background: var(--primary-color);
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: #000;
+    font-family: var(--lexend-deca);
+    font-weight: var(--fw-500);
+    box-shadow: 19px 20px 60px 0px rgba(255, 165.99999999999991, 83.99999999999999, 0);
+}
+.banner .banner-image img{
+    margin-top: 40px;
+}
+/* BANNER END */
