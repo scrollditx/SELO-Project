@@ -275,7 +275,8 @@ header .menu ul li:hover .drop-down {
 .research .research-con h2 .clip,
 .seo .title h2 .clip,
 .award-section .award-content h2 .clip,
-.work .work-content h2 .clip {
+.work .work-content h2 .clip,
+.response .title h2 .clip {
   background-image: var(--primary-color);
   background-clip: text;
   display: inline-block;
@@ -285,14 +286,16 @@ header .menu ul li:hover .drop-down {
 .research .research-con h2 .clip span,
 .seo .title h2 .clip span,
 .award-section .award-content h2 .clip span,
-.work .work-content h2 .clip span {
+.work .work-content h2 .clip span,
+.response .title h2 .clip span {
   color: transparent;
 }
 .banner .banner-content p,
 .service-content p .research .research-con p,
 .seo .title p,
 .award-section .award-content p,
-.work .work-content p {
+.work .work-content p,
+.response .title p {
   padding-bottom: 30px;
   color: var(--dark-color);
   font-size: var(--fs-18);
@@ -302,7 +305,8 @@ header .menu ul li:hover .drop-down {
 .research .research-con p span,
 .seo .title p span,
 .award-section .award-content p span,
-.work .work-content p span {
+.work .work-content p span,
+.response .title p span {
   color: var(--White-color);
 }
 .banner .banner-content a {
@@ -464,10 +468,6 @@ header .menu ul li:hover .drop-down {
   box-shadow: 19px 20px 60px 0px
     rgba(255, 165.99999999999991, 83.99999999999999, 0);
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
 }
 
 .research .research-con h1 .clip {
@@ -522,7 +522,7 @@ header .menu ul li:hover .drop-down {
   left: 0;
 }
 
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
 .seo .title p {
@@ -680,6 +680,7 @@ header .menu ul li:hover .drop-down {
 .work {
   background-image: url(/ASSETS/IMG/service-bg.png);
   padding: 100px 0;
+  position: relative;
 }
 
 .work .work-content {
@@ -710,7 +711,7 @@ header .menu ul li:hover .drop-down {
   transition: 0.5s;
 }
 
-.work .work-box span{
+.work .work-box span {
   font-size: 14px;
   color: var(--dark-color);
   display: block;
@@ -719,7 +720,7 @@ header .menu ul li:hover .drop-down {
   padding: 15px;
 }
 
-.work .work-box h3{
+.work .work-box h3 {
   font-size: 20px;
   font-family: var(--Lexend-Deca);
   color: var(--White-color);
@@ -728,23 +729,96 @@ header .menu ul li:hover .drop-down {
   padding: 0 15px;
 }
 
-.pt-60{
+.pt-60 {
   padding-top: 60px;
 }
 
-.work .work-box a img:hover{
-  rotate: 3deg;
+.work .work-box a img:hover {
+  transform: rotate(3deg);
+}
+
+.work .star img {
+  width: 44px;
+  position: absolute;
+  right: 10%;
+  top: 15.5%;
 }
 /* WORK-SECTION END */
 /* RESPONSE-SECTION-START */
-.response .title{
+.margin{
+  margin: 5px;
+}
+
+.response .title {
   text-align: center;
 }
-.response .title h2{
+.response .title h2 {
   color: var(--white-color);
   font-size: var(--fs-44);
   font-weight: var(--fw-500);
 }
+
+.container .response-content {
+  width: 540px;
+  height: 271px;
+  background-image: linear-gradient(180deg, #282a36 0%, #2a2b3100 100%);
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 1px 1px 0px 1px;
+  border-color: #7e829917;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 35px 35px 35px 35px;
+}
+.response .container .text-container {
+  text-align: left;
+  color: #ffffff;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.response .container .response-content .title-container {
+  display: inline-block;
+}
+.response .container .response-content .title-container .title-1 h5 {
+  color: #a9a4ab;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.response .container .response-content .title-container .title-2 h5 {
+  color: #a9a4ab66;
+  font-family: "Lexend Deca", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.response .container .response-content{
+  position: relative;
+}
+
+.response .container .response-content .title-container .title-2 .person-1 img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 100% 100% 100% 100%;
+  position: absolute;
+  right: 10%;
+  top: 62%;
+
+}
+
 /* RESPONSE-SECTION-END */
 /* FOOTER START */
 .foot-container {
