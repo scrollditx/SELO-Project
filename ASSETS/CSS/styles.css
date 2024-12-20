@@ -735,8 +735,17 @@ header .menu ul li:hover .drop-down {
 .work .work-box a img:hover{
   rotate: 3deg;
 }
-/* WORK -SECTION END */
-
+/* WORK-SECTION END */
+/* RESPONSE-SECTION-START */
+.response .title{
+  text-align: center;
+}
+.response .title h2{
+  color: var(--white-color);
+  font-size: var(--fs-44);
+  font-weight: var(--fw-500);
+}
+/* RESPONSE-SECTION-END */
 /* FOOTER START */
 .foot-container {
   justify-content: space-around;
