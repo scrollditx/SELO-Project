@@ -591,6 +591,7 @@ header .menu ul li:hover .drop-down {
   position: absolute;
   right: 200px;
   top: 18%;
+  animation: rotate 8s infinite linear;
 }
 /* SEO FINISH */
 
