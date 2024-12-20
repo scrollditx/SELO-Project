@@ -521,6 +521,10 @@ header .menu ul li:hover .drop-down {
   top: 0;
   left: 0;
 }
+
+.justify-between{
+  justify-content: space-between;
+}
 .seo .title p {
   text-align: center;
   color: var(--dark-color);
@@ -665,7 +669,7 @@ header .menu ul li:hover .drop-down {
 }
 
 .row {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 10px;
 }
@@ -673,6 +677,15 @@ header .menu ul li:hover .drop-down {
 /* SLIDER END */
 
 /* WORK -SECTION START */
+.work {
+  background-image: url(/ASSETS/IMG/service-bg.png);
+  padding: 100px 0;
+}
+
+.work .work-content {
+  margin-top: 100px;
+}
+
 .work .work-content h2 {
   font-family: var(--Lexend-Deca);
   font-size: var(--fs-44);
@@ -691,9 +704,36 @@ header .menu ul li:hover .drop-down {
   padding-top: 10px;
 }
 
-.work {
-  background-image: url(/ASSETS/IMG/service-bg.png);
-  padding: 100px 0;
+.work .work-box img {
+  border-radius: 40px;
+  height: 480px;
+  transition: 0.5s;
+}
+
+.work .work-box span{
+  font-size: 14px;
+  color: var(--dark-color);
+  display: block;
+  font-family: var(--Lexend-Deca);
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.work .work-box h3{
+  font-size: 20px;
+  font-family: var(--Lexend-Deca);
+  color: var(--White-color);
+  text-transform: uppercase;
+  font-weight: var(--fw-500);
+  padding: 0 15px;
+}
+
+.pt-60{
+  padding-top: 60px;
+}
+
+.work .work-box a img:hover{
+  rotate: 3deg;
 }
 /* WORK -SECTION END */
 
