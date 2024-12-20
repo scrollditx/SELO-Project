@@ -263,7 +263,8 @@ header .menu ul li:hover .drop-down {
 .banner .banner-content h1,
 .service .title h2,
 .research .research-con h2,
-.seo .title h2 {
+.seo .title h2,
+.work .work-content h2 {
   font-size: var(--fs-64);
   font-family: var(--lexend-deca);
   line-height: 1.2;
@@ -273,7 +274,8 @@ header .menu ul li:hover .drop-down {
 .service .title h1 .clip,
 .research .research-con h2 .clip,
 .seo .title h2 .clip,
-.award-section .award-content h2 .clip {
+.award-section .award-content h2 .clip,
+.work .work-content h2 .clip {
   background-image: var(--primary-color);
   background-clip: text;
   display: inline-block;
@@ -282,14 +284,16 @@ header .menu ul li:hover .drop-down {
 .service .title h1 .clip span,
 .research .research-con h2 .clip span,
 .seo .title h2 .clip span,
-.award-section .award-content h2 .clip span {
+.award-section .award-content h2 .clip span,
+.work .work-content h2 .clip span {
   color: transparent;
 }
 .banner .banner-content p,
 .service-content p .research .research-con p,
 .seo .title p,
-.award-section .award-content p {
-  padding: 40px 0;
+.award-section .award-content p,
+.work .work-content p {
+  padding-bottom: 30px;
   color: var(--dark-color);
   font-size: var(--fs-18);
 }
@@ -297,7 +301,8 @@ header .menu ul li:hover .drop-down {
 .service-content p span,
 .research .research-con p span,
 .seo .title p span,
-.award-section .award-content p span {
+.award-section .award-content p span,
+.work .work-content p span {
   color: var(--White-color);
 }
 .banner .banner-content a {
@@ -508,9 +513,13 @@ header .menu ul li:hover .drop-down {
 }
 
 .seo .seo-overlay {
-  background-image: url(/ASSETS/IMG/service-bg.png);
+  background-image: linear-gradient(180deg, #030305 0%, #080a1000 100%);
   width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 .seo .title p {
   text-align: center;
@@ -614,12 +623,12 @@ header .menu ul li:hover .drop-down {
 .award-section .award-content .peoples img {
   width: 207px;
   display: inline-block;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .award-section .award-content .peoples span {
   font-size: var(--fs-16);
   margin-left: 20px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .award-section .award-image .star {
@@ -634,6 +643,59 @@ header .menu ul li:hover .drop-down {
 }
 
 /* AWARD-SECTION-END */
+
+/* SLIDER START */
+
+.slider {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: #7e82994d;
+  padding: 20px 0px 20px 0px;
+  z-index: 0;
+  background-color: #080a11;
+}
+
+.slider .col-1 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.row {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* SLIDER END */
+
+/* WORK -SECTION START */
+.work .work-content h2 {
+  font-family: var(--Lexend-Deca);
+  font-size: var(--fs-44);
+  font-weight: var(--fw-500);
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.work .work-content p {
+  text-align: left;
+  color: var(--dark-color);
+  font-family: var(--Lexend-Deca);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  padding-top: 10px;
+}
+
+.work {
+  background-image: url(/ASSETS/IMG/service-bg.png);
+  padding: 100px 0;
+}
+/* WORK -SECTION END */
 
 /* FOOTER START */
 .foot-container {
