@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* ROOT VARS */
+/* ROOT VARIABLES */
 :root {
   --primary-color: linear-gradient(90deg, #58e6ff 0%, #fc81fe 100%);
   --secondary-color: linear-gradient(180deg, #282a36 0%, #2a2b3100 100%);
@@ -42,7 +42,7 @@ body {
   line-height: 1.5;
   font-family: var(--Lexend-Deca);
 }
-/*! .CONTAINER HERE */
+/* CONTAINER HERE */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -149,10 +149,10 @@ img {
   padding-right: 12px;
 }
 
-/* HEADER START */
+/* HEADER BEGIN */
 header {
   position: absolute;
-  padding: 10px;
+  padding: 0 80px;
   width: 100%;
   z-index: 1;
 }
@@ -228,9 +228,9 @@ header .menu ul li:hover .drop-down {
   visibility: visible;
   top: 54px;
 }
-/* HEADER END*/
+/* HEADER FINISH*/
 
-/* BANNER START */
+/* BANNER BEGIN */
 .banner {
   background-image: url(/ASSETS/IMG/selo-bg.png);
   background-size: cover;
@@ -259,6 +259,7 @@ header .menu ul li:hover .drop-down {
   top: -60px;
   left: 75%;
   width: 44px;
+  animation: rotate 8s infinite linear;
 }
 .banner .banner-content h1,
 .service .title h2,
@@ -276,7 +277,8 @@ header .menu ul li:hover .drop-down {
 .seo .title h2 .clip,
 .award-section .award-content h2 .clip,
 .work .work-content h2 .clip,
-.response .title h2 .clip {
+.response .title h2 .clip,
+.response .campaign .title h2 .clip {
   background-image: var(--primary-color);
   background-clip: text;
   display: inline-block;
@@ -287,7 +289,8 @@ header .menu ul li:hover .drop-down {
 .seo .title h2 .clip span,
 .award-section .award-content h2 .clip span,
 .work .work-content h2 .clip span,
-.response .title h2 .clip span {
+.response .title h2 .clip span,
+.response .campaign .title h2 .clip span {
   color: transparent;
 }
 .banner .banner-content p,
@@ -295,7 +298,8 @@ header .menu ul li:hover .drop-down {
 .seo .title p,
 .award-section .award-content p,
 .work .work-content p,
-.response .title p {
+.response .title p,
+.response .campaign .title p {
   padding-bottom: 30px;
   color: var(--dark-color);
   font-size: var(--fs-18);
@@ -306,7 +310,8 @@ header .menu ul li:hover .drop-down {
 .seo .title p span,
 .award-section .award-content p span,
 .work .work-content p span,
-.response .title p span {
+.response .title p span,
+.response .campaign .title p span {
   color: var(--White-color);
 }
 .banner .banner-content a {
@@ -354,9 +359,9 @@ header .menu ul li:hover .drop-down {
   font-weight: var(--fw-400);
   letter-spacing: 0px;
 }
-/* BANNER END */
+/* BANNER FINISH */
 
-/* SERVICE START */
+/* SERVICE BEGIN */
 
 .service {
   background-image: url(/ASSETS/IMG/service-bg.png);
@@ -416,8 +421,8 @@ header .menu ul li:hover .drop-down {
   padding-left: 0;
 }
 
-/* SERVICE END */
-/* SERVICE 2 START */
+/* SERVICE FINISH */
+/* SERVICE 2 BEGIN */
 
 .research {
   width: 100%;
@@ -500,26 +505,31 @@ header .menu ul li:hover .drop-down {
   top: -100px;
   left: 100%;
   width: 44px;
+  animation: rotate 8s infinite linear;
+  -webkit-animation: rotate 8s infinite linear;
 }
-/* SERVICE 2 END */
+/* SERVICE 2 FINISH */
 
-/* SEO START */
+/* SEO BEGIN */
 
 .seo {
-  background-image: url(/ASSETS/IMG/selo-bg.png);
+  background-image: url(/ASSETS/IMG/ytfy.png);
+  padding: 100px 0;
   position: relative;
   z-index: 1;
-  padding: 100px;
 }
-
-.seo .seo-overlay {
-  background-image: linear-gradient(180deg, #030305 0%, #080a1000 100%);
-  width: 100%;
+.seo-img-overlay .seo-overlay {
+  background-image: url("/ASSETS/IMG/oval-2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  opacity: 0.3;
   height: 100%;
-  position: absolute;
-  z-index: -1;
+  width: 100%;
   top: 0;
   left: 0;
+  z-index: -1;
+  position: absolute;
 }
 
 .justify-between {
@@ -582,29 +592,21 @@ header .menu ul li:hover .drop-down {
   right: 200px;
   top: 18%;
 }
-/* SEO END */
+/* SEO FINISH */
 
-/* AWARD-SECTION-START */
+/* AWARD-SECTION-BEGIN */
 .award-section {
   position: relative;
+  background-image: url(/ASSETS/IMG/efvfe.png);
+  padding: 100px 0;
+  z-index: 1;
 }
-.award-overlay {
-  background: url(/ASSETS/IMG/bg-overlay.png);
-  background-position: 85% 80%;
+
+.award-img-overlay {
+  background-image: url(/ASSETS/IMG/double-oval.png);
   background-repeat: no-repeat;
-  background-size: 40% auto;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  z-index: -1;
-  opacity: 1;
-}
-.award-overlay-img {
-  background-image: url(/ASSETS/IMG/oval-2.png);
-  background-repeat: no-repeat;
-  background-position: 75% 80%;
-  background-size: 30% auto;
+  background-position: 100% 80%;
+  background-size: 50% auto;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -613,6 +615,7 @@ header .menu ul li:hover .drop-down {
   z-index: -1;
   opacity: 1;
 }
+
 .award-section .award-content {
   padding: 16px;
 }
@@ -644,11 +647,13 @@ header .menu ul li:hover .drop-down {
   border-radius: 50%;
   border: 25px solid #edb451;
   background-size: 70% auto;
+  animation: rotate 8s infinite linear;
+  -webkit-animation: rotate 8s infinite linear;
 }
 
-/* AWARD-SECTION-END */
+/* AWARD-SECTION-FINISH */
 
-/* SLIDER START */
+/* SLIDER BEGIN */
 
 .slider {
   width: 100%;
@@ -669,18 +674,34 @@ header .menu ul li:hover .drop-down {
 }
 
 .row {
-  /* justify-content: space-between; */
   align-items: center;
   padding: 10px;
 }
 
-/* SLIDER END */
+/* SLIDER FINISH */
 
-/* WORK -SECTION START */
+/* WORK -SECTION BEGIN */
 .work {
   background-image: url(/ASSETS/IMG/service-bg.png);
   padding: 100px 0;
   position: relative;
+  z-index: 1;
+}
+.work-overlay-opacity .work-overlay {
+  background-image: url("/ASSETS/IMG/double-oval.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+  height: 90%;
+  width: 90%;
+  top: 0;
+  left: 0;
+}
+
+.work-overlay {
+  z-index: -1;
+  position: absolute;
 }
 
 .work .work-content {
@@ -742,10 +763,36 @@ header .menu ul li:hover .drop-down {
   position: absolute;
   right: 10%;
   top: 15.5%;
+  animation: rotate 8s infinite linear;
+  -webkit-animation: rotate 8s infinite linear;
 }
-/* WORK-SECTION END */
-/* RESPONSE-SECTION-START */
-.margin{
+/* WORK-SECTION FINISH */
+/* RESPONSE-SECTION-BEGIN */
+.response {
+  background-color: #080a10;
+  background-image: url(/ASSETS/IMG/efvfe.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.response .response-overlay {
+  background-image: url("/ASSETS/IMG/bg-overlay.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.margin {
   margin: 5px;
 }
 
@@ -768,6 +815,7 @@ header .menu ul li:hover .drop-down {
   border-color: #7e829917;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   padding: 35px 35px 35px 35px;
+  z-index: 1;
 }
 .response .container .text-container {
   text-align: left;
@@ -803,7 +851,7 @@ header .menu ul li:hover .drop-down {
   letter-spacing: 0px;
 }
 
-.response .container .response-content{
+.response .container .response-content {
   position: relative;
 }
 
@@ -816,15 +864,56 @@ header .menu ul li:hover .drop-down {
   position: absolute;
   right: 10%;
   top: 62%;
-
 }
 
-/* RESPONSE-SECTION-END */
-/* FOOTER START */
+/* CAMPAIGN-SECTION-BEGIN */
+
+.campaign {
+  padding-top: 180px;
+}
+
+.campaign .title a {
+  padding: 15px 40px;
+  background: var(--primary-color);
+  display: inline-block;
+  border-radius: 50px;
+  color: #000;
+  font-size: var(--fs-18);
+  font-weight: var(--fw-500);
+  font-family: var(--Lexend-Deca);
+  box-shadow: 19px 20px 60px 0px
+    rgba(255, 165.99999999999991, 83.99999999999999, 0);
+  transition: 0.5s;
+  /* margin-top: 20px; */
+}
+
+.campaign .title a:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.campaign .star img {
+  width: 44px;
+  position: absolute;
+  bottom: 0;
+  right: 320px;
+  top: 800px;
+  animation: rotate 8s infinite linear;
+  -webkit-animation: rotate 8s infinite linear;
+}
+
+
+/* CAMPAIGN-SECTION-FINISH */
+/* RESPONSE-SECTION-FINISH */
+/* FOOTER BEGIN */
 .foot-container {
   justify-content: space-around;
   align-items: center;
   margin-left: 150px;
+  margin-top: 50px;
 }
 
 .bottom {
@@ -853,4 +942,16 @@ header .menu ul li:hover .drop-down {
 .footer-nav a:hover {
   color: var(--text--color);
 }
-/* FOOTER END */
+/* FOOTER FINISH */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-0deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-0deg);
+  }
+}
