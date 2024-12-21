@@ -152,7 +152,7 @@ img {
 /* HEADER BEGIN */
 header {
   position: absolute;
-  padding: 0 80px;
+  padding: 0 30px;
   width: 100%;
   z-index: 1;
 }
@@ -241,13 +241,14 @@ header .menu ul li:hover .drop-down {
 .bg-overlay {
   background: url(/ASSETS/IMG/bg-overlay.png);
   background-repeat: no-repeat;
-  background-size: 45% auto;
+  background-size: 65% auto;
   width: 100%;
-  height: 80%;
+  height: 100%;
   left: 0;
+  top: 0;
   position: absolute;
   background-position: 50% 50%;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 .banner .banner-content {
   padding-right: 80px;
@@ -368,10 +369,21 @@ header .menu ul li:hover .drop-down {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0 80px;
+  padding-top: 100px;
   width: 100%;
+  position: relative;
 }
-
+.service-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #080a1000 0%, #080a10 100%);
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* position: absolute; */
+}
 .service .title h1 {
   font-weight: var(--fw-500);
   font-size: var(--fs-44);
@@ -517,7 +529,28 @@ header .menu ul li:hover .drop-down {
   padding: 100px 0;
   position: relative;
   z-index: 1;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* .seo-img-overlay{
+  background-image: linear-gradient(180deg, #7e82992e 0%, #7e829900 100%);
+  opacity: 1;
+}  */
+.seo .linear-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #080a10 0%, #080a1000 100%);
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .seo-img-overlay .seo-overlay {
   background-image: url("/ASSETS/IMG/oval-2.png");
   background-position: center center;
@@ -593,6 +626,20 @@ header .menu ul li:hover .drop-down {
   top: 18%;
   animation: rotate 8s infinite linear;
 }
+
+.seo .seo-cart {
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.seo .seo-cart:hover {
+  background: var(--primary-color);
+  color: black;
+  transform: scale(1.05);
+}
+.seo .seo-cart:hover p {
+  color: white;
+}
+
 /* SEO FINISH */
 
 /* AWARD-SECTION-BEGIN */
@@ -601,6 +648,23 @@ header .menu ul li:hover .drop-down {
   background-image: url(/ASSETS/IMG/efvfe.png);
   padding: 100px 0;
   z-index: 1;
+  background-color: #020710;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.award-linear-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #080a11 0%, #02071000 100%);
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* position: absolute; */
+  z-index: -1;
 }
 
 .award-img-overlay {
@@ -687,7 +751,24 @@ header .menu ul li:hover .drop-down {
   padding: 100px 0;
   position: relative;
   z-index: 1;
+  background-color: #080a10;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.work-linear-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #080a10d9 0%, #080a1000 100%);
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* position: absolute; */
+}
+
 .work-overlay-opacity .work-overlay {
   background-image: url("/ASSETS/IMG/double-oval.png");
   background-position: bottom center;
@@ -777,9 +858,9 @@ header .menu ul li:hover .drop-down {
   background-size: cover;
   width: 100%;
   position: relative;
+  z-index: 1;
 }
-
-.response .response-overlay {
+.response-linear-overlay {
   background-image: url("/ASSETS/IMG/bg-overlay.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -791,6 +872,14 @@ header .menu ul li:hover .drop-down {
   top: 0;
   left: 0;
   position: absolute;
+}
+.response .response-linear-overlay {
+ 
+  background-color: transparent;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  position: absolute;
+  z-index: -1;
 }
 
 .margin {
@@ -905,7 +994,6 @@ header .menu ul li:hover .drop-down {
   animation: rotate 8s infinite linear;
   -webkit-animation: rotate 8s infinite linear;
 }
-
 
 /* CAMPAIGN-SECTION-FINISH */
 /* RESPONSE-SECTION-FINISH */
