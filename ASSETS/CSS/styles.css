@@ -249,7 +249,7 @@ header .menu ul li:hover .drop-down {
   opacity: 0.4;
 }
 .banner .banner-content {
-  padding-right: 80px;
+  padding: 80px;
   position: relative;
 }
 
