@@ -7,7 +7,6 @@
     display: flex;
   }
 }
-
 @media (min-width: 576px) {
   .col-sm-1 {
     width: 8.33%;
@@ -150,7 +149,6 @@
     justify-content: start;
   }
 }
-
 @media (min-width: 1200px) {
   .col-xl-1 {
     width: 8.33%;
@@ -193,8 +191,6 @@
     width: 1140px;
   }
 }
-
-
 @media (min-width: 1400px) {
   .col-xxl-1 {
     width: 8.33%;

@@ -1038,10 +1038,6 @@ header .menu ul li:hover .drop-down {
   color: var(--text--color);
 }
 
-.text-start{
-  text-align: start;
-}
-
 /* FOOTER FINISH */
 
 @keyframes rotate {
