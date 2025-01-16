@@ -996,8 +996,8 @@ header .menu ul li:hover .drop-down {
 /* RESPONSE-SECTION-FINISH */
 /* FOOTER BEGIN */
 .footer-main {
-  padding: 60px 0;
-  margin-top: 30px;
+  background-color: #090b0f;
+  padding: 20px 0;
 }
 .footer {
   border-bottom: 1px solid #212529;
@@ -1006,6 +1006,7 @@ header .menu ul li:hover .drop-down {
 .footer h2 {
   font-family: var(--lexend-deca);
   font-size: var(--fs-24);
+  padding-bottom: 20px;
 }
 .footer p {
   font-size: var(--fs-24);
@@ -1036,6 +1037,11 @@ header .menu ul li:hover .drop-down {
 .footer-nav a:hover {
   color: var(--text--color);
 }
+
+.text-start{
+  text-align: start;
+}
+
 /* FOOTER FINISH */
 
 @keyframes rotate {
@@ -1048,4 +1054,8 @@ header .menu ul li:hover .drop-down {
   100% {
     transform: rotate(-0deg);
   }
+}
+
+.d-none {
+  display: none;
 }
