@@ -297,12 +297,12 @@ header .menu ul li:hover .drop-down {
 .service-content p .research .research-content p,
 .seo .title p,
 .award-section .award-content p,
-.work .work-content p,
 .response .title p,
 .response .campaign .title p {
-  padding-bottom: 30px;
+  padding: 30px 0;
   color: var(--dark-color);
   font-size: var(--fs-18);
+  font-weight: var(--fw-300);
 }
 .banner .banner-content p span,
 .service-content p span,
@@ -314,6 +314,7 @@ header .menu ul li:hover .drop-down {
 .response .campaign .title p span {
   color: var(--White-color);
 }
+
 .banner .banner-content a {
   background: var(--primary-color);
   display: inline-block;
@@ -394,8 +395,8 @@ header .menu ul li:hover .drop-down {
   text-align: left;
   color: #a9a4abc7;
   font-family: var(--Lexend);
-  font-size: var(--fs-18);
-  font-weight: var(--fw-300);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -425,6 +426,10 @@ header .menu ul li:hover .drop-down {
 .px-0 {
   padding-right: 0;
   padding-left: 0;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 /* SERVICE FINISH */
@@ -457,8 +462,8 @@ header .menu ul li:hover .drop-down {
   font-family: var(--Lexend-Deca);
   font-size: var(--fs-18);
   font-weight: var(--fw-300);
-  line-height: 1.2;
-  margin: 30px 0px 30px 0px;
+  line-height: 1.9em;
+  margin: 10px 0px 10px 0px;
   padding: 10px 5px 20px 5px;
 }
 
@@ -508,6 +513,7 @@ header .menu ul li:hover .drop-down {
   left: 92%;
   width: 44px;
   animation: rotate 8s infinite linear;
+  -webkit-animation: rotate 8s infinite linear;
 }
 /* SERVICE 2 FINISH */
 
@@ -642,7 +648,7 @@ header .menu ul li:hover .drop-down {
   background-size: cover;
 }
 
-.award-linear-overlay {
+/* .award-linear-overlay {
   background-color: transparent;
   background-image: linear-gradient(180deg, #080a11 0%, #02071000 100%);
   opacity: 1;
@@ -652,7 +658,7 @@ header .menu ul li:hover .drop-down {
   top: 0;
   left: 0;
   z-index: -1;
-}
+} */
 
 .award-img-overlay {
   background-image: url(/ASSETS/IMG/double-oval.png);
@@ -677,6 +683,17 @@ header .menu ul li:hover .drop-down {
   font-family: var(--lexend-deca);
   line-height: 1.2;
   margin-bottom: 25px;
+}
+
+.award-section .award-content p {
+  text-align: left;
+  color: #a9a4abc7;
+  font-family: var(--lexend-deca);
+  font-size: 15px;
+  font-weight: var(--fw-400);
+  line-height: 1.9em;
+  padding-bottom: 15px;
+  padding-top: 0px;
 }
 
 .award-section .award-content .peoples img {
@@ -749,7 +766,7 @@ header .menu ul li:hover .drop-down {
 /* WORK -SECTION BEGIN */
 .work {
   background-image: url(/ASSETS/IMG/service-bg.png);
-  padding: 100px 0;
+  padding-bottom: 80px;
   background-image: linear-gradient(180deg, #080a10d9 0%, #080a1000 100%);
   position: relative;
   z-index: 1;
@@ -768,6 +785,10 @@ header .menu ul li:hover .drop-down {
   width: 100%;
   top: 0;
   left: 0;
+  -webkit-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  -moz-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  -ms-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  -o-transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
 .work-overlay-opacity .work-overlay {
@@ -803,9 +824,10 @@ header .menu ul li:hover .drop-down {
   text-align: left;
   color: var(--dark-color);
   font-family: var(--Lexend-Deca);
-  font-size: var(--fs-18);
+  font-size: 15px;
   font-weight: var(--fw-300);
   line-height: 1.6;
+  letter-spacing: 1px;
   padding-top: 10px;
 }
 
@@ -833,8 +855,8 @@ header .menu ul li:hover .drop-down {
   padding: 0 15px;
 }
 
-.pt-60 {
-  padding-top: 60px;
+.pt-40 {
+  padding-top: 40px;
 }
 
 .work .work-box a img:hover {
