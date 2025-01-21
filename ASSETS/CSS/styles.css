@@ -88,11 +88,11 @@ img {
   align-items: center;
 }
 
-.justify-end {
+.justify-content-end {
   justify-content: flex-end;
 }
 
-.justify-center {
+.justify-content-center {
   justify-content: center;
 }
 
@@ -219,6 +219,10 @@ header .menu ul li .drop-down ol li:last-child:hover a {
 header .drop-down ol li:hover a {
   background-color: rgba(137, 43, 226, 0.078);
   color: var(--text-black);
+}
+
+a i {
+  margin-left: 8px;
 }
 
 header .menu ul li:hover .drop-down {
@@ -427,8 +431,7 @@ header .menu ul li:hover .drop-down {
   padding-right: 0;
   padding-left: 0;
 }
-
-.justify-start{
+.justify-content-start{
   justify-content: flex-start;
 }
 
@@ -572,7 +575,7 @@ header .menu ul li:hover .drop-down {
   line-height: 1.9em;
 }
 
-.justify-center {
+.justify-content-center {
   justify-content: center;
 }
 
@@ -647,18 +650,6 @@ header .menu ul li:hover .drop-down {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* .award-linear-overlay {
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #080a11 0%, #02071000 100%);
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-} */
 
 .award-img-overlay {
   background-image: url(/ASSETS/IMG/double-oval.png);
@@ -1036,7 +1027,6 @@ header .menu ul li:hover .drop-down {
 }
 
 .justify-content-center {
-  display: flex;
   justify-content: center;
 }
 
@@ -1059,7 +1049,6 @@ header .menu ul li:hover .drop-down {
 .footer-nav a:hover {
   color: var(--text--color);
 }
-
 /* FOOTER FINISH */
 
 @keyframes rotate {
@@ -1076,4 +1065,16 @@ header .menu ul li:hover .drop-down {
 
 .d-none {
   display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.align-items-baseline{
+  align-items: baseline;
 }
